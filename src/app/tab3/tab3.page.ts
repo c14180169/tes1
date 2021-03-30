@@ -24,8 +24,8 @@ export class Tab3Page {
     this.fetchData();
   }
 
-  navigateDetail(path : string){
-    this.router.navigate(['tab4/', path]);
+  navigate(){
+    this.router.navigate(['tab4/', 'tab4']);
   }
 
   fetchData(){

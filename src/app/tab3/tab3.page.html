@@ -11,6 +11,8 @@
     <ion-card-header>
       <ion-card-title>{{data.filename}}</ion-card-title>
     </ion-card-header>
-    <ion-img [src]="data.urlImage" (click)="navigateDetail(data.urlImage)"></ion-img>   
+    <ion-img [src]="data.urlImage"></ion-img>   
   </ion-card>
+
+  <ion-button (click)="navigate()">NAVIGATE TO TAB 4</ion-button>
 </ion-content>

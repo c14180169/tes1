@@ -4,11 +4,15 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Detail Foto
+      List Foto Juga
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-img [src]="path" *ngIf="check"></ion-img>
+  <ion-grid *ngIf="check">
+    <ion-col size="4" *ngFor="let data of urlImageStorage; index as position">
+      <ion-img [src]="data"></ion-img>   
+    </ion-col>
+  </ion-grid>
 </ion-content>
